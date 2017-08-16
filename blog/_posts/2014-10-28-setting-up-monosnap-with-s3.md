@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Setting up Monosnap with S3'
+subtitle: 'An easy way to automatically upload screenshots with a shareable link'
 date: 2014-10-28 12:00:00
 author: 'Matt Millican'
 permalink: blog/setting-up-monosnap-with-s3/
