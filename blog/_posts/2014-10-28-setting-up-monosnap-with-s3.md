@@ -7,6 +7,7 @@ author: 'Matt Millican'
 permalink: blog/setting-up-monosnap-with-s3/
 disqus_identifier: setting-up-monosnap-with-s3
 disqus_url: /blog/post/setting-up-monosnap-with-s3
+redirect_from: /blog/post/setting-up-monosnap-with-s3
 ---
 
 Originally, I had Monosnap saving to a folder on my Dropbox account.  This was fine and dandy, but still had some annoyances, like the link taking a bit to copy.  Monosnap has a built-in S3 integration which is pretty easy to set up.  Let's walk through that now.

@@ -6,6 +6,7 @@ author: 'Matt Millican'
 permalink: blog/new-year-new-site/
 disqus_identifier: new-year-new-site
 disqus_url: /blog/post/new-year-new-site
+redirect_from: /blog/post/new-year-new-site
 ---
 
 _Note: This blog has since been moved to use Jekyll on GitHub Pages_

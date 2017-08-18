@@ -12,3 +12,6 @@ markdown: kramdown
 highlighter: rouge
 
 disqus: mattmillican
+
+plugins:
+  - jekyll-redirect-from

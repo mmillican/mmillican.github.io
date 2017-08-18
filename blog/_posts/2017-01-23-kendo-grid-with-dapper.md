@@ -6,7 +6,8 @@ date: 2017-01-23 12:00:00
 author: 'Matt Millican'
 permalink: blog/querying-data-with-dapper-for-a-kendo-ui-grid
 disqus_identifer: querying-data-with-dapper-for-a-kendo-ui-grid
-disqus_url: blog/post/querying-data-with-dapper-for-a-kendo-ui-grid
+disqus_url: /blog/post/querying-data-with-dapper-for-a-kendo-ui-grid
+redirect_from: /blog/post/querying-data-with-dapper-for-a-kendo-ui-grid
 ---
 
 [Dapper](https://github.com/StackExchange/dapper-dot-net) is a small library that allows you to execute SQL queries and map the results to strongly typed (or dynamic) objects by extending your existing IDbConnection.  For the past several years, I've used EntityFramework as my ORM, and while I still think it's a great tool, there are times when you may want to have more control over the SQL you're executing, namely for performance.

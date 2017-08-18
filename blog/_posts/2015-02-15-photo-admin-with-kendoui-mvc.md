@@ -7,6 +7,7 @@ author: 'Matt Millican'
 permalink: blog/photo-gallery-admin-with-kendo-ui-for-mvc/
 disqus_identifier: photo-gallery-admin-with-kendo-ui-for-mvc
 disqus_url: blog/post/photo-gallery-admin-with-kendo-ui-for-mvc
+redirect_from: blog/post/photo-gallery-admin-with-kendo-ui-for-mvc
 ---
 
 I am currently working on building a simple CMS for myself using ASP.NET MVC and [Kendo MVC wrappers](http://www.telerik.com/aspnet-mvc).  Within the CMS, I wanted a simple photo gallery, with an administrative UI for managing albums and photos.  Follow along as I share how I built the admin.

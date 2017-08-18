@@ -7,6 +7,7 @@ author: 'Matt Millican'
 permalink: blog/build-a-slackbot-in-node-js/
 disqus_identifier: build-a-slackbot-in-node-js
 disqus_url: blog/post/build-a-slackbot-in-node-js
+redirect_from: blog/post/build-a-slackbot-in-node-js
 ---
 
 Our development team recently made the switch from Hipchat to [Slack](http://slack.com) for team communication.  Previously, we had a few integrations with other tools we use, such as BitBucket and Bamboo.  There were also a few new ones that we wanted, like the one I'm going to walk you through today.

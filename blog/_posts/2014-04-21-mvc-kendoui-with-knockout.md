@@ -6,6 +6,7 @@ author: 'Matt Millican'
 permalink: blog/mvc-application-with-kendo-ui-and-knockout/
 disqus_identifier: mvc-application-with-kendo-ui-and-knockout
 disqus_url: /blog/post/mvc-application-with-kendo-ui-and-knockout
+redirect_from: /blog/post/mvc-application-with-kendo-ui-and-knockout
 ---
 
 I've been a big fan of Kendo UI since before it was actually Kendo UI (fka "Telerik MVC Extensions").  I've recently began to like Knockout quite a bit and have been doing a lot more client side development.  Unfortunately though, a lot of my javascript was "spaghetti code."  I had some JS at the bottom of pages for some stuff and some in random external JS files of course without any rhyme or reason.  Further, I was doing a ton of things like $('#my-field').hide().  That's fine and all, but in large apps, I felt it getting hard to manage and keep track of.
