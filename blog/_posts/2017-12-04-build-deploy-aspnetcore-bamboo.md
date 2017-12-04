@@ -85,7 +85,7 @@ To keep this a little shorter, I'm going to assume you have already created the 
 
     If you only have a single context, you can omit the `--context` switch.  Similarly, if you have multiple contexts, you can simply add additional lines to the script.  
 
-    For this step, we need to define a few more items.  The first is "Environment variables".  Assuming you're deploying to a production environment, you'll want to set it to `ASPNETCORE_Enivronment=Production`.  If you are deploying to something other than production, you can change the value as appropriate.  Note, that similarly to when you are running the [web] app, EF Migrations will try to use the connection string in `appsettings.Production.json` if it can find one.  
+    For this step, we need to define a few more items.  The first is "Environment variables".  Assuming you're deploying to a production environment, you'll want to set it to `ASPNETCORE_Environment=Production`.  If you are deploying to something other than production, you can change the value as appropriate.  Note, that similarly to when you are running the [web] app, EF Migrations will try to use the connection string in `appsettings.Production.json` if it can find one.  
 
     I also set my "Working sub directory" to `${bamboo.proj.project_dir}`; but you could probably specify the paths in the script above instead.
 
