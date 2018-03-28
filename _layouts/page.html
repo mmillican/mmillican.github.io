@@ -8,7 +8,7 @@ layout: default
         <div class="text-right">
             <div class="site-heading text-right">
                 <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                <span class="subheading">{{ page.description }}</span>
+                <span class="subheading">{% if page.description %}{{ page.description }}{% else %}{{site.subtitle}}{% endif %}</span>
             </div>
         </div>
     </div>
