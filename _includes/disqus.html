@@ -3,7 +3,7 @@
   </section>
   <script>
     var disqus_shortname = '{{ site.disqus }}',
-        disqus_url = 'http://www.mattmillican.com/{% if page.disqus_url %}{{ page.disqus_url}}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}',
+        disqus_url = 'http://www.mattmillican.com{% if page.disqus_url %}{{ page.disqus_url}}{% else %}{{ page.url | prepend: site.baseurl }}{% endif %}',
         discuss_identifier = '{% if page.disqus_identifier %}{{ page.disqus_identifier}}{% else %}http://www.mattmillican.com{{ page.url | prepend: site.baseurl }}{% endif %}';
   </script>
   <script async src='https://{{ site.disqus }}.disqus.com/embed.js'></script>
