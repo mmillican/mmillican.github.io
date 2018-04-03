@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Clean Blog v4.0.0-alpha (http://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
 body {
@@ -96,9 +96,9 @@ body {
   @media only screen and (min-width: 992px) {
     #mainNav {
       border-bottom: 1px solid transparent;
-      background: transparent; }
+      background-color: rgba(0, 0, 0, 0.6); }
       #mainNav .navbar-brand {
-        padding: 15px 20px;
+        padding: 0 20px;
         color: white; }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: rgba(255, 255, 255, 0.8); }
@@ -153,6 +153,8 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  header.masthead .container {
+    padding: 100px 0; }
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
@@ -165,7 +167,8 @@ header.masthead {
         padding: 200px 0; } }
   header.masthead .page-heading,
   header.masthead .site-heading {
-    text-align: center; }
+    text-align: center;
+    padding: 100px 0; }
     header.masthead .page-heading h1,
     header.masthead .site-heading h1 {
       font-size: 50px;
@@ -182,29 +185,32 @@ header.masthead {
       header.masthead .page-heading h1,
       header.masthead .site-heading h1 {
         font-size: 80px; } }
-  header.masthead .post-heading h1 {
-    font-size: 35px; }
-  header.masthead .post-heading .meta,
-  header.masthead .post-heading .subheading {
-    line-height: 1.1;
-    display: block; }
-  header.masthead .post-heading .subheading {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 10px 0 30px;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  header.masthead .post-heading .meta {
-    font-size: 20px;
-    font-weight: 300;
-    font-style: italic;
-    font-family: 'Lora', 'Times New Roman', serif; }
-    header.masthead .post-heading .meta a {
-      color: white; }
-  @media only screen and (min-width: 768px) {
+  header.masthead .post-heading {
+    background-color: rgba(0, 133, 161, 0.8);
+    padding: 50px 15px; }
     header.masthead .post-heading h1 {
-      font-size: 55px; }
+      font-size: 35px; }
+    header.masthead .post-heading .meta,
     header.masthead .post-heading .subheading {
-      font-size: 30px; } }
+      line-height: 1.1;
+      display: block; }
+    header.masthead .post-heading .subheading {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 10px 0 30px;
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    header.masthead .post-heading .meta {
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      font-family: 'Lora', 'Times New Roman', serif; }
+      header.masthead .post-heading .meta a {
+        color: white; }
+    @media only screen and (min-width: 768px) {
+      header.masthead .post-heading h1 {
+        font-size: 55px; }
+      header.masthead .post-heading .subheading {
+        font-size: 30px; } }
 
 .post-preview > a {
   color: #333333; }
