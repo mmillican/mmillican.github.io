@@ -109,3 +109,8 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() 
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
 });
+
+gulp.task('watch-sass', ['sass', 'minify-css'], function() {
+  gulp.watch('_sass/*.scss', ['sass']);
+  gulp.watch('css/*.css', ['minify-css']);
+});
