@@ -2,6 +2,7 @@ title: 'Matt Millican'
 author: 'Matt Millican'
 subtitle: 'Web Developer. Photographer. Geek at heart.'
 
+feed_url: /feed.xml
 twitter_username: millicanmatt
 github_username:  mmillican
 stackoverflow_link: users/976042/matt-millican
@@ -15,3 +16,4 @@ disqus: mattmillican
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
