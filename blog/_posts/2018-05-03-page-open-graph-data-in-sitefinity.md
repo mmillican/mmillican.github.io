@@ -2,7 +2,7 @@
 layout: post
 title: 'Page Level Open Graph Data in Sitefinity'
 subtitle: "Add open graph tags on pages in Sitefinity"
-date: 2018-05-04 12:00:00
+date: 2018-05-03 12:00:00
 author: 'Matt Millican'
 # header-img: 'img/blog/scaffolding.jpg'
 permalink: blog/page-open-graph-data-in-sitefinity
