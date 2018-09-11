@@ -8,7 +8,7 @@ author: 'Matt Millican'
 permalink: blog/page-open-graph-data-in-sitefinity
 ---
 
-> **Updated 2018-09-11**: The check for whether or not to render the Open Graph tags in the layout was updated to check for "virtual pages"
+{% include post_updated.html update_date="2018-09-11" message="The check for whether or not to render the Open Graph tags in the layout was updated to check for 'virtual pages'" %}
 
 [Open Graph](http://ogp.me/) enables content on web pages to be presented in a more sharable format for 
 social networks such as Facebook and Twitter.
