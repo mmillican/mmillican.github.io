@@ -8,6 +8,8 @@ author: 'Matt Millican'
 permalink: blog/page-open-graph-data-in-sitefinity
 ---
 
+> **Updated 2018-09-11**: The check for whether or not to render the Open Graph tags in the layout was updated to check for "virtual pages"
+
 [Open Graph](http://ogp.me/) enables content on web pages to be presented in a more sharable format for 
 social networks such as Facebook and Twitter.
 
@@ -50,7 +52,7 @@ Within the `<head>` of the page, I added the following code:
     var currentNode = SiteMapBase.GetActualCurrentNode();
 }
 
-@if (!SystemManager.IsDesignMode && currentNode != null)
+@if (!SystemManager.IsDesignMode && currentNode != null && !SitefinityHelpers.IsVirtualPage)
 {
     var ogTitle = (currentNode.GetCustomFieldValue("OpenGraphTitle") as string) ?? currentNode.Title;
     var ogDescription = (currentNode.GetCustomFieldValue("OpenGraphDescription") as string) ?? currentNode.Description;
@@ -67,6 +69,20 @@ Within the `<head>` of the page, I added the following code:
 ```
 
 To start, we're getting the current page node from the site map and then checking that we are not in design mode and that the page exists. 
+You'll also need to check if this is a "virtual page" - that is, a details page for something like events, blog or news. To do so, put the following property on a static helper in your project:
+
+```
+public static bool IsVirtualPage
+{
+    get
+    {
+        var routeData = new SitefinityRoute().GetRouteData(SystemManager.CurrentHttpContext);
+        return routeData.Values["Params"] != null;
+    }
+}
+```
+
+(Another thanks to Steve for this snippet.)
 
 Following, we need to retrieve the custom data value and cast it as a string (at least for the title and description). If that's null, we want to coalesce to use the page title (or description) and then output the meta tag.
 
