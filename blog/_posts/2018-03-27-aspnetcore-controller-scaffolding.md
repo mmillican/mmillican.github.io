@@ -2,6 +2,7 @@
 layout: post
 title: 'Scaffolding ASP.NET Core API Controllers'
 subtitle: "Quickly create API controllers to jump start your project"
+description: "Quickly create API controllers to help jump start your next ASP.NET Core Web API"
 date: 2018-03-27 12:00:00
 author: 'Matt Millican'
 header-img: 'img/blog/scaffolding.jpg'

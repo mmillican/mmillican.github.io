@@ -1,6 +1,7 @@
 title: 'Matt Millican'
 author: 'Matt Millican'
 subtitle: 'Web Developer. Photographer. Geek at heart.'
+description: Web Developer specializing in ASP.NET Core
 
 feed_url: /feed.xml
 twitter_username: millicanmatt
@@ -8,6 +9,11 @@ github_username:  mmillican
 stackoverflow_link: users/976042/matt-millican
 flickr_username: mattmillican
 linkedin_username: mattmillican
+
+twitter:
+  username: millicanmatt
+  card: summary
+
 
 markdown: kramdown
 highlighter: rouge
@@ -17,3 +23,4 @@ disqus: mattmillican
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-seo-tag
