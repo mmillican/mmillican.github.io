@@ -1,18 +1,18 @@
 ---
 layout: post
-title: 'Proxy External Requests During Development in ASP.NET Core'
+title: 'Allowing External Requests During Development in ASP.NET Core'
 subtitle: "Use Ngrok to proxy external requests to ASP.NET Core for testing"
-date: 2019-03-21 12:00:00
+date: 2019-03-20 12:00:00
 author: 'Matt Millican'
-header-img: 'img/blog/abstract-servers-internet.jpg'
+header-img: 'img/blog/laptop-code-php.jpg'
 permalink: blog/:slug
 ---
 
 Developing applications involving webhooks or Slack integrations that expect incoming HTTP requests can be tricky. In most cases, your development machine is either behind a home router or firewall or in the corporate world, multiple layers of firewalls and other network devices. This makes testing these types of applications tricky, short of having to deploy to a server each time you want to test a change.
 
-Fortunately, there are services such as [ngrok](https://ngrok.com/) which make exposing your local development server to the outside world, without firewall changes or getting IT involved. Let's take a look at getting this set up.
+Fortunately, there are services such as [ngrok](https://ngrok.com/) which make it easy to expose your local development machine to the outside world, without firewall changes or getting IT involved. Let's take a look at getting this set up.
 
-To start, you'll need an account on ngrok. They offer a free version and paid versions which offer additional features such as multiple tunnels, custom URLs and domains, better security and higher request limits. For now, I'm just using the free version, but I can definitely see upgrading at some point. Once you have an account, there's just a [few simple steps](https://dashboard.ngrok.com/get-started):
+To get started, you'll need an account on ngrok. They offer a free version and paid versions which offer additional features such as multiple tunnels, custom URLs and domains, better security and higher request limits. For now, I'm just using the free version, but I can definitely see upgrading at some point. Once you have an account, there's just a [few simple steps](https://dashboard.ngrok.com/get-started):
 
 1. Download
 1. Unzip, and add to your `path`
@@ -27,7 +27,7 @@ Ngrok is all set up and ready to use. Starting it up is as simple as running:
 $ ngrok http 80
 ```
 
-where `80` is the port number you want to proxy _to_. If you're using Kestrel, that would be `5000` (or `5001` for HTTPS).
+where `80` is the port number you want to connect _to_. If you're using Kestrel, that would be `5000` (or `5001` for HTTPS).
 
 ## Forwarding HTTP Headers
 
@@ -57,3 +57,5 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 Now you should be able to rebuild your project and refresh your ngrok URL to start testing.
 
 Hopefully, by using ngrok you'll be able to more easily test your APIs and webhooks without having to worry about firewall rules other networking configurations.
+
+_Photo by Caspar Camille Rubin on Unsplash_
