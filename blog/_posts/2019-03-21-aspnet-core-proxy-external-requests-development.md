@@ -58,4 +58,4 @@ Now you should be able to rebuild your project and refresh your ngrok URL to sta
 
 Hopefully, by using ngrok you'll be able to more easily test your APIs and webhooks without having to worry about firewall rules other networking configurations.
 
-_Photo by Caspar Camille Rubin on Unsplash_
+Photo by Caspar Camille Rubin on Unsplash.
