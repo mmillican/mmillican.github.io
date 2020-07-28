@@ -102,7 +102,7 @@ A hub can have dependencies injected into it, just like any other controller or
 service. This is helpful if you need to persist data to a database or other 
 store.
 
-Following, we have two methods, which coorelate to our `IGameClient` interface. 
+Following, we have two methods, which correlate to our `IGameClient` interface. 
 We'll look at the `PlayerJoined` method. First, we're getting the game info by 
 it's code (method redacted for brevity) and then we are creating a `Player` object 
 and persisting it to our data store (in this case that's CosmosDB). SignalR has 
