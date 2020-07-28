@@ -65,6 +65,10 @@ header.masthead {
       a {
         color: white;
       }
+      span:not(:last-child):after { 
+        margin: 0 10px;
+        content: ' • ';
+      }
     }
     @media only screen and (min-width: 768px) {
       h1 {

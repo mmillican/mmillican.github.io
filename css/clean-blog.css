@@ -1,8 +1,9 @@
 /*!
  * Start Bootstrap - Clean Blog v4.0.0-alpha (http://startbootstrap.com/template-overviews/clean-blog)
- * Copyright 2013-2019 Start Bootstrap
+ * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
+@charset "UTF-8";
 body {
   font-size: 20px;
   color: #333333;
@@ -207,6 +208,9 @@ header.masthead {
       font-family: 'Lora', 'Times New Roman', serif; }
       header.masthead .post-heading .meta a {
         color: white; }
+      header.masthead .post-heading .meta span:not(:last-child):after {
+        margin: 0 10px;
+        content: ' • '; }
     @media only screen and (min-width: 768px) {
       header.masthead .post-heading h1 {
         font-size: 55px; }
