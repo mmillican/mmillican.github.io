@@ -9,8 +9,8 @@ permalink: blog/:slug
 ---
 
 Generating less-than-full-sized images of user-uploaded content to an 
-application for applications such as CMS', social platforms, or 
-blogs. Smaller image sizes enable better performance for your users and save on 
+application such as a CMS, social platform, or 
+blog. Smaller image sizes enable better performance for your users and save on 
 bandwidth costs when full resolution isn't a necessity.
 
 However, resizing an image to potentially multiple smaller sizes or doing other 
