@@ -16,33 +16,27 @@ var banner = ['/*!\n',
   ''
 ].join('');
 
-// Compiles SCSS files from /scss into /css
-gulp.task('sass', function() {
-  return gulp.src('./_sass/clean-blog.scss')
-    .pipe(sass())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
+// ***** NOT USING GULP FOR SASS ANYMORE - USES JEKYLL *****
 
-// Minify compiled CSS
-gulp.task('minify-css', gulp.parallel('sass'), function() {
-  return gulp.src('./css/clean-blog.css')
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
+
+// Compiles SCSS files from /scss into /css
+// gulp.task('sass', function() {
+//   return gulp.src('./_sass/clean-blog.scss')
+//     .pipe(sass())
+//     .pipe(header(banner, {
+//       pkg: pkg
+//     }))
+//     .pipe(gulp.dest('css'))
+// });
+
+// // Minify compiled CSS
+// gulp.task('minify-css', gulp.parallel('sass'), function() {
+//   return gulp.src('./css/clean-blog.css')    
+//     .pipe(rename({
+//       suffix: '.min'
+//     }))
+//     .pipe(gulp.dest('css'))
+// });
 
 // Minify custom JS
 gulp.task('minify-js', function() {

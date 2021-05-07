@@ -2,6 +2,7 @@ title: 'Matt Millican'
 author: 'Matt Millican'
 subtitle: 'Web Developer. Photographer. Geek at heart.'
 description: Web Developer specializing in ASP.NET Core
+header-img: 'img/header-bg.jpg'
 
 feed_url: /feed.xml
 twitter_username: millicanmatt
@@ -14,6 +15,9 @@ twitter:
   username: millicanmatt
   card: summary
 
+sass:
+  sass_dir: _sass
+  style: compressed
 
 markdown: kramdown
 highlighter: rouge
